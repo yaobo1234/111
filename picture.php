@@ -29,7 +29,8 @@
 		document.querySelector("#pic").onclick = function(){
 			wx.chooseImage({
 				success : function(e){
-					var path = e.loaclIds[0];
+
+					var path = e.localIds[0];
 					var img = new Image;
 					img.src = path;
 					document.body.appendChild(img)
